@@ -55,6 +55,9 @@ def generate_odd_numbers(start, end):
     """
     # Use list comprehension to filter even numbers in the range
     return [num for num in range(start, end + 1) if num % 2 != 0]
+
+def say_hi():
+    return "hi"
 # Example usage
 if __name__ == "__main__":
     # Login example
