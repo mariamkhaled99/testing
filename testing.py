@@ -63,44 +63,47 @@ import os
 import shutil
 from tkinter import Tk, filedialog
 
-def upload_pdf(destination_folder):
-    """
-    Allows the user to select a PDF file and uploads it to the specified folder.
+# def upload_pdf(destination_folder):
+#     """
+#     Allows the user to select a PDF file and uploads it to the specified folder.
 
-    Args:
-        destination_folder (str): The folder where the uploaded PDF will be saved.
+#     Args:
+#         destination_folder (str): The folder where the uploaded PDF will be saved.
 
-    Returns:
-        str: The path to the uploaded file, or a message if the upload fails.
-    """
-    # Ensure the destination folder exists
-    os.makedirs(destination_folder, exist_ok=True)
+#     Returns:
+#         str: The path to the uploaded file, or a message if the upload fails.
+#     """
+#     # Ensure the destination folder exists
+#     os.makedirs(destination_folder, exist_ok=True)
     
-    # Initialize Tkinter and hide the root window
-    root = Tk()
-    root.withdraw()
+#     # Initialize Tkinter and hide the root window
+#     root = Tk()
+#     root.withdraw()
     
-    # Open a file dialog for the user to select a file
-    file_path = filedialog.askopenfilename(
-        title="Select a PDF file",
-        filetypes=[("PDF files", "*.pdf")],
-    )
+#     # Open a file dialog for the user to select a file
+#     file_path = filedialog.askopenfilename(
+#         title="Select a PDF file",
+#         filetypes=[("PDF files", "*.pdf")],
+#     )
     
-    if not file_path:
-        return "No file selected."
+#     if not file_path:
+#         return "No file selected."
     
-    # Check if the selected file is a PDF
-    if not file_path.lower().endswith(".pdf"):
-        return "The selected file is not a PDF."
+#     # Check if the selected file is a PDF
+#     if not file_path.lower().endswith(".pdf"):
+#         return "The selected file is not a PDF."
 
-    try:
-        # Get the file name and copy it to the destination folder
-        file_name = os.path.basename(file_path)
-        destination_path = os.path.join(destination_folder, file_name)
-        shutil.copy(file_path, destination_path)
-        return f"File uploaded successfully to {destination_path}."
-    except Exception as e:
-        return f"An error occurred: {e}"
+#     try:
+#         # Get the file name and copy it to the destination folder
+#         file_name = os.path.basename(file_path)
+#         destination_path = os.path.join(destination_folder, file_name)
+#         shutil.copy(file_path, destination_path)
+#         return f"File uploaded successfully to {destination_path}."
+#     except Exception as e:
+#         return f"An error occurred: {e}"
+
+def welcome():
+    return 'welcome user'
 # Example usage
 if __name__ == "__main__":
     # Login example
