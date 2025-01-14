@@ -41,6 +41,20 @@ def generate_even_numbers(start, end):
     # Use list comprehension to filter even numbers in the range
     return [num for num in range(start, end + 1) if num % 2 == 0]
 
+
+def generate_odd_numbers(start, end):
+    """
+    Generate a list of even numbers within a given range [start, end].
+    
+    Parameters:
+        start (int): Starting number of the range.
+        end (int): Ending number of the range.
+    
+    Returns:
+        list: List of even numbers within the range.
+    """
+    # Use list comprehension to filter even numbers in the range
+    return [num for num in range(start, end + 1) if num % 2 != 0]
 # Example usage
 if __name__ == "__main__":
     # Login example
