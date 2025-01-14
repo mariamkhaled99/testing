@@ -103,7 +103,7 @@ from tkinter import Tk, filedialog
 #         return f"An error occurred: {e}"
 
 def welcome():
-    return 'welcome new user'
+    return 'welcome new new user'
 # Example usage
 if __name__ == "__main__":
     # Login example
