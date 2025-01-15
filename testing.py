@@ -22,7 +22,7 @@ def sum_two_values(a, b):
         b (int or float): The second value.
 
     Returns:
-        int or float: The sum of the two values.
+        int or float: The sum of the two values
     """
     return a + b
 
