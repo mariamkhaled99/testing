@@ -104,6 +104,9 @@ from tkinter import Tk, filedialog
 
 def welcome():
     return 'welcome new new user'
+
+def finish_unittest():
+    return "i finished unit testing"
 # Example usage
 if __name__ == "__main__":
     # Login example
